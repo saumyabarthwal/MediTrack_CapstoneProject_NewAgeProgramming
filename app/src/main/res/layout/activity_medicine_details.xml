@@ -1,0 +1,151 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F5FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicine Details"
+            android:textColor="#7156A8"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvDetailName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicine Name"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#35264F"
+            android:paddingBottom="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/card_white">
+
+            <TextView
+                android:id="@+id/tvDetailDosage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dosage"
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:paddingBottom="14dp" />
+
+            <TextView
+                android:id="@+id/tvDetailTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:paddingBottom="14dp" />
+
+            <TextView
+                android:id="@+id/tvDetailFrequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frequency"
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:paddingBottom="14dp" />
+
+            <TextView
+                android:id="@+id/tvDetailDates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Duration"
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:paddingBottom="14dp" />
+
+            <TextView
+                android:id="@+id/tvDetailQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:paddingBottom="14dp" />
+
+            <TextView
+                android:id="@+id/tvDetailStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#7156A8" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Medicine"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#35264F"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnEditMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Edit Medicine"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="#7156A8"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnMarkTaken"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Mark as Taken"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="#75B99A"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnMarkMissed"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Mark as Missed"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="#D9B46A"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnDeleteMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Delete Medicine"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="#C96F78"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>
