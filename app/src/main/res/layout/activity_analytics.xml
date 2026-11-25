@@ -1,0 +1,37 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/screen_background" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/analytics" android:textSize="25sp" android:textStyle="bold"
+            android:textColor="@color/text_primary"/>
+        <Spinner android:id="@+id/spAnalyticsFilter" android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <TextView android:id="@+id/tvAnalyticsSummary" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:padding="12dp"
+            android:background="@drawable/card_white" android:text="@string/no_completed_doses"
+            android:textColor="@color/text_primary"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/weekly_adherence" android:textStyle="bold" android:textColor="@color/text_primary"
+            android:layout_marginTop="12dp"/>
+        <com.github.mikephil.charting.charts.BarChart android:id="@+id/barChart"
+            android:layout_width="match_parent" android:layout_height="220dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/monthly_adherence" android:textStyle="bold" android:textColor="@color/text_primary"
+            android:layout_marginTop="12dp"/>
+        <com.github.mikephil.charting.charts.LineChart android:id="@+id/lineChart"
+            android:layout_width="match_parent" android:layout_height="220dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/taken_vs_missed" android:textStyle="bold" android:textColor="@color/text_primary"
+            android:layout_marginTop="12dp"/>
+        <com.github.mikephil.charting.charts.PieChart android:id="@+id/pieChart"
+            android:layout_width="match_parent" android:layout_height="260dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/medicine_analytics" android:textStyle="bold" android:textColor="@color/text_primary"
+            android:layout_marginTop="12dp"/>
+        <TextView android:id="@+id/tvMedicineAnalytics" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="@drawable/card_white"
+            android:padding="12dp" android:text="@string/no_completed_records" android:textColor="@color/text_primary"/>
+    </LinearLayout>
+</ScrollView>

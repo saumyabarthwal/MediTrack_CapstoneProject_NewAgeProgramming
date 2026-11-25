@@ -1,0 +1,91 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/privacy_title" android:textColor="@color/text_primary"
+            android:textSize="26sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/privacy_subtitle" android:textColor="@color/text_secondary"
+            android:textSize="14sp" android:layout_marginTop="4dp" android:layout_marginBottom="14dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp"
+            android:background="@drawable/card_white" android:layout_marginBottom="10dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/privacy_your_privacy" android:textColor="@color/text_primary"
+                android:textSize="17sp" android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/privacy_your_privacy_body" android:textColor="@color/text_secondary"
+                android:textSize="14sp" android:lineSpacingExtra="3dp" android:layout_marginTop="8dp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp"
+            android:background="@drawable/card_white" android:layout_marginBottom="10dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/privacy_information_collected" android:textColor="@color/text_primary"
+                android:textSize="17sp" android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/privacy_information_collected_body" android:textColor="@color/text_secondary"
+                android:textSize="14sp" android:lineSpacingExtra="3dp" android:layout_marginTop="8dp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp"
+            android:background="@drawable/card_white" android:layout_marginBottom="10dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/privacy_usage" android:textColor="@color/text_primary"
+                android:textSize="17sp" android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/privacy_usage_body" android:textColor="@color/text_secondary"
+                android:textSize="14sp" android:lineSpacingExtra="3dp" android:layout_marginTop="8dp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp"
+            android:background="@drawable/card_white" android:layout_marginBottom="10dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/privacy_storage" android:textColor="@color/text_primary"
+                android:textSize="17sp" android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/privacy_storage_body" android:textColor="@color/text_secondary"
+                android:textSize="14sp" android:lineSpacingExtra="3dp" android:layout_marginTop="8dp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp"
+            android:background="@drawable/card_white" android:layout_marginBottom="10dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/privacy_security" android:textColor="@color/text_primary"
+                android:textSize="17sp" android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/privacy_security_body" android:textColor="@color/text_secondary"
+                android:textSize="14sp" android:lineSpacingExtra="3dp" android:layout_marginTop="8dp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp"
+            android:background="@drawable/card_white" android:layout_marginBottom="10dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/privacy_control" android:textColor="@color/text_primary"
+                android:textSize="17sp" android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/privacy_control_body" android:textColor="@color/text_secondary"
+                android:textSize="14sp" android:lineSpacingExtra="3dp" android:layout_marginTop="8dp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp"
+            android:background="@drawable/card_white" android:layout_marginBottom="10dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/privacy_policy_note" android:textColor="@color/text_primary"
+                android:textSize="17sp" android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/privacy_policy_note_body" android:textColor="@color/text_secondary"
+                android:textSize="14sp" android:lineSpacingExtra="3dp" android:layout_marginTop="8dp" />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/privacy_support_note" android:textColor="@color/text_secondary"
+            android:textSize="12sp" android:gravity="center" android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

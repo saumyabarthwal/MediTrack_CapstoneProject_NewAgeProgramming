@@ -4,6 +4,8 @@ plugins {
 }
 
 android {
+    // Keep generated output outside OneDrive to avoid Windows file-lock issues.
+    buildDir = file("C:/Temp/MediTrack/app-build")
     namespace = "com.example.meditrack"
     compileSdk {
         version = release(37)
@@ -37,6 +39,7 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
+    implementation("androidx.work:work-runtime-ktx:2.10.1")
     implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -45,4 +48,5 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:34.19.0"))
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore")
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 }

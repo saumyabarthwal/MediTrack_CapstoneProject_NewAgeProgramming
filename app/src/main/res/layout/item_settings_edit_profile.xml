@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutEditProfile" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:orientation="horizontal"
+    android:gravity="center_vertical" android:padding="15dp"
+    android:background="@drawable/card_white" android:clickable="true"
+    android:focusable="true" android:layout_marginBottom="9dp">
+    <TextView android:layout_width="42dp" android:layout_height="42dp"
+        android:gravity="center" android:text="👤" android:textSize="21sp"
+        android:background="@drawable/card_lavender" />
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/profile_information" android:textColor="@color/text_primary"
+            android:textSize="15sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/edit_profile" android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="›" android:textSize="25sp" android:textColor="@color/accent" />
+</LinearLayout>

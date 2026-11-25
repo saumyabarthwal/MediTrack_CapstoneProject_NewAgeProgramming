@@ -1,24 +1,119 @@
-
-
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F4F7FC"
-    android:padding="20dp">
+    android:background="#FFF7F8FC">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Dose History"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="#17365D"
-        android:paddingBottom="15dp" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingHorizontal="22dp"
+        android:paddingTop="38dp">
 
-    <ListView
-        android:id="@+id/lvHistory"
+        <TextView
+            android:id="@+id/tvHistoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dose History"
+            android:textColor="#302544"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track your medicine doses"
+            android:textColor="#7469A7"
+            android:textSize="18sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:orientation="horizontal">
+                <Button android:id="@+id/btnFilterAll" android:layout_width="wrap_content" android:layout_height="54dp" android:text="☷  All" android:textAllCaps="false" android:backgroundTint="#5D48C7" android:textColor="#FFFFFF" />
+                <Button android:id="@+id/btnFilterTaken" android:layout_width="wrap_content" android:layout_height="54dp" android:layout_marginStart="8dp" android:text="✓  Taken" android:textAllCaps="false" android:backgroundTint="#FFFFFF" android:textColor="#302544" />
+                <Button android:id="@+id/btnFilterMissed" android:layout_width="wrap_content" android:layout_height="54dp" android:layout_marginStart="8dp" android:text="×  Missed" android:textAllCaps="false" android:backgroundTint="#FFFFFF" android:textColor="#302544" />
+                <Button android:id="@+id/btnFilterUpcoming" android:layout_width="wrap_content" android:layout_height="54dp" android:layout_marginStart="8dp" android:text="◷  Upcoming" android:textAllCaps="false" android:backgroundTint="#FFFFFF" android:textColor="#302544" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btnHistoryDate" android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:layout_marginEnd="5dp" android:text="▣  Select Date" android:textAllCaps="false" android:backgroundTint="#FFFFFF" android:textColor="#302544" />
+            <Spinner android:id="@+id/spHistoryMedicine" android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:layout_marginStart="5dp" android:background="@drawable/card_white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnClearHistoryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/clear_date_filter"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+        <TextView android:id="@+id/tvHistoryDateFilter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#7469A7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="18dp"
+            android:background="@drawable/card_lavender">
+            <TextView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:gravity="center"
+                android:text="▥"
+                android:textColor="#5540C8"
+                android:textSize="26sp"
+                android:background="@drawable/bg_medicine_icon" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Daily Dose Summary" android:textColor="#7469A7" android:textSize="16sp" />
+                <TextView android:id="@+id/tvDoseSummary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 / 0 Doses" android:textColor="#302544" android:textSize="24sp" android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvDoseHistory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="12dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="12dp"
+            android:paddingBottom="90dp"
+            android:clipToPadding="false" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="82dp"
+        android:layout_marginTop="-82dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/card_white"
+        android:elevation="18dp">
+        <TextView style="@style/DashboardNavItem" android:text="⌂&#10;Home" />
+        <TextView style="@style/DashboardNavItem" android:text="◆&#10;Medicines" />
+        <TextView style="@style/DashboardNavItem" android:text="◷&#10;History" android:textColor="#5D48C7" />
+        <TextView style="@style/DashboardNavItem" android:text="•••&#10;More" />
+    </LinearLayout>
 
+    <Spinner android:id="@+id/spHistoryFilter" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
 </LinearLayout>
